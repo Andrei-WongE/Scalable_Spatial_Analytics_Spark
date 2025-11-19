@@ -15,8 +15,8 @@
 
 # Pulling docket in terminal and binding ports
 
-# docker run -it apache/sedona:latest /bin/bash
-# docker run -d -e DRIVER_MEM=6g -e EXCECUTOR_MEN=8g -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 -p 8085:8085
+# docker pull apache/sedona:latest
+# docker run -d -e DRIVER_MEM=6g -e EXCECUTOR_MEN=8g -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 -p 8085:8085 apache/sedona:latest
 
 # When using Docker with the WSL 2 backend, memory and CPU limits are managed by Windows,
 # not directly by Docker or the container. So setting DRIVER_MEM and EXECUTOR_MEM as environment variables
@@ -24,6 +24,10 @@
 
 # apache/sedona : latest
 
+
+# To check actual resources WSL 2 assigns to Docker containers
+
 # docker run -it apache/sedona:latest /bin/bash
 # free -h
 # nproc
+
