@@ -24,6 +24,8 @@
 
 # apache/sedona : latest
 
+# Notebook runs in: http://localhost:8888/lab/workspaces/auto-m
+# See other ports in Docker container
 
 # To check actual resources WSL 2 assigns to Docker containers
 
@@ -31,3 +33,4 @@
 # free -h
 # nproc
 
+# Install spark, outside docker,  to install Java
